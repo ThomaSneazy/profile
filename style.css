@@ -1,0 +1,203 @@
+body{
+    background: rbg(240, 240, 240);
+    color: rgb(65, 63, 63);
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    font-size: 32px;
+    font-weight: bold;
+}
+h2{
+    text-align: center;
+    font-size: 18px;
+}
+h3{
+  text-align: center;
+  font-size: 15px;
+}
+a{
+    text-decoration: none;
+    color: rgb(10, 10, 14);
+}
+.title_skill{
+  font-weight: bold;
+  font-size: 30px;
+}
+/* a:hover{
+    text-decoration: none;
+    color: green;
+} */
+
+
+#banner{
+    background-image: url('https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80.avif');
+    /* background: rgb(209, 209, 209); */
+    background-size: cover;
+    width: 100%;
+    height:600px;
+    background-position: center;
+    padding: 100px 0;
+    text-align: center;
+    color: white;
+
+}
+#banner h1{
+    margin-bottom: 0 auto;
+    color: white;
+}
+
+.avatar-bordered {
+  width: 130px;
+  height: 130px;
+  /* border-radius: 50%; */
+  /* border: solid rgb(57, 57, 57) 1px; */
+  /* box-shadow: 5px, 5px, 5px rgb(139, 0, 0); */
+}
+/* .avatar-bordered :hover{
+  transition: 0.4s ease;
+  transform: scale(1.2);
+} */
+
+#small_para h3{
+  color: rgb(237, 237, 237);
+  font-size: 20px;
+  font-weight: lighter;
+  padding-top: 38px;
+
+}
+
+#banner p{
+    color: white;
+    font-size: 30px;
+    font-weight: lighter;
+
+}
+#banner img:hover {
+  transform: rotate(360deg) scale(6);
+  transition: ease 3s;
+}
+.card{
+    padding: 50px;
+    text-align: center;
+}
+
+#footer{
+    background-image: url('https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80.avif');
+    color: #F4F4F4;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+#footer a{
+    text-decoration: none;
+    font-size: 30px;
+    margin: 0 20px;
+    color: rgba(224, 224, 224, 0.9);
+}
+
+#footer a:hover{
+    transition: 0.5s;
+    transform-style: flat;
+    color: white;
+}
+.btn-btn-lg:hover{
+  color: transparent;
+  background: -webkit-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: -o-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: 0.8s;
+}
+
+.fab.fa-linkedin:hover{
+    color: #0A66C2;
+    transition: 0.8s;
+}
+
+.fab.fa-github:hover{
+  color: #6e5494;
+  transition: 0.8s;
+}
+
+.fab.fa-instagram:hover{
+  color: transparent;
+  background: -webkit-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: -o-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: 0.8s;
+  /* color: #5851DB; */
+}
+
+.fab.fa-twitter:hover{
+  transition: 0.8s;
+  color: #188CD8;
+}
+
+.btn_list {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.btn_list .btn-gradient {
+  color: rgba(255,255,255,.54);
+  box-shadow: 0 0 1px rgba(255,255,255,0.54);
+}
+.btn_list .btn-gradient:hover {
+  color: #fff;
+}
+
+/* @media (max-width: 1040px){
+  #small_para h3{
+    padding-top: 200px;}
+ } */
+ @media (max-width: 860px){
+  #small_para h3{
+    padding-top: 0px;}
+
+  .avatar-bordered{
+    margin-top: 80px;
+  }
+
+  #banner h2{
+      padding-top: 100px;
+    }
+ }
+
+ @media (max-width: 1040px){
+  .avatar-bordered{
+    margin-top: 60px;
+  }
+  }
+
+ @media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
