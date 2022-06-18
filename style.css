@@ -1,11 +1,11 @@
 body{
     background: rbg(240, 240, 240);
     color: rgb(65, 63, 63);
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Helvetica', sans-serif;
     margin: 0;
 }
 h1{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Helvetica', sans-serif;
     margin: 0;
     color: white;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
@@ -20,66 +20,163 @@ h3{
   text-align: center;
   font-size: 15px;
 }
+
+p{
+  color: black;
+}
 a{
     text-decoration: none;
     color: rgb(10, 10, 14);
 }
 .title_skill{
-  font-weight: bold;
+  font-weight: 400;
   font-size: 30px;
-}
-/* a:hover{
-    text-decoration: none;
-    color: green;
-} */
-
-
-#banner{
-    background-image: url('https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80.avif');
-    /* background: rgb(209, 209, 209); */
-    background-size: cover;
-    width: 100%;
-    height:600px;
-    background-position: center;
-    padding: 100px 0;
-    text-align: center;
-    color: white;
 
 }
-#banner h1{
-    margin-bottom: 0 auto;
-    color: white;
+
+
+
+.navbar li::before {
+  transform: scaleY(0);
+  transform-origin: bottom right;
+  color: white;
 }
 
-.avatar-bordered {
-  width: 130px;
-  height: 130px;
-  /* border-radius: 50%; */
-  /* border: solid rgb(57, 57, 57) 1px; */
-  /* box-shadow: 5px, 5px, 5px rgb(139, 0, 0); */
+.navbar li:hover::before {
+  transform: scaleY(.5);
+  transform-origin: bottom left;
+  color: white;
 }
-/* .avatar-bordered :hover{
+
+.navbar li::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: #FFCD00;
+  z-index: -1;
+  transition: transform .3s ease;
+}
+
+.navbar{
+  background: rgb(255, 255, 255);
+  height: 14vh;
+  margin: 0;
+  box-shadow: 1px 1px 5px #232323;
+}
+
+.navbar a{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  list-style-type: none;
+  display: flex;
+}
+
+ul{
+  display: flex;
+  justify-content: space-evenly;
+  font-family: 'Helvetica';
+  font-size: 17px;
+  letter-spacing: 2px;
+  margin-top: 5vh;
+}
+
+.navbar li:hover{
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
+
+.title-navbar{
+  text-align: justify;
+  margin-left: 15px;
+  font-family: 'Helvetica';
+  font-weight: 500;
+  letter-spacing: 3px;
+  color: black;
+}
+
+
+.button-contact{
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-family: 'Helvetica';
+  border-radius: 20px;
+  box-shadow: 1px 1px 6px #404040;
+}
+
+
+.container i{
+  color: black;
+}
+
+.banner a:hover{
+  color: rgb(0, 0, 0);
   transition: 0.4s ease;
-  transform: scale(1.2);
-} */
+  background-color: #FFCD00;
+  text-decoration: none;
+}
 
-#small_para h3{
-  color: rgb(237, 237, 237);
+
+.banner{
+  background-color: rgb(255, 255, 255);     /* background: rgb(209, 209, 209); */
+  background-size: cover;
+  margin-top: 34px;
+  width: 100%;
+  background-position: center;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: end;
+  height: 100vh;
+}
+
+
+
+
+.small_para h3{
+  color: rgb(0, 0, 0);
   font-size: 20px;
   font-weight: lighter;
-  padding-top: 38px;
+  margin-right: 100px;
 
+  width: 100vmin;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-left: 100px;
 }
 
-#banner p{
-    color: white;
-    font-size: 30px;
-    font-weight: lighter;
-
+.banner p{
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  font-weight: 400;
+  text-decoration: underline overline #FFCD00;
 }
-#banner img:hover {
-  transform: rotate(360deg) scale(6);
-  transition: ease 3s;
+
+
+.banner img{
+  width: 300px;
+  height: 460px;
+  border: 1px solid black;
+  margin-bottom: 25px;
+  box-shadow: black 8px 7px 0px;
+}
+.banner img{
+  width: 300px;
+  height: 460px;
+  border: 1px solid black;
+  margin-bottom: 25px;
+  box-shadow: 0.8rem 0.8rem #000000, -0.7rem -0.7rem #FFCD00;
+}
+
+
+
+.banner img:hover {
+  transform: rotate(3deg) scale(1.02);
+  transition: ease 1s;
 }
 .card{
     padding: 50px;
@@ -87,21 +184,23 @@ a{
 }
 
 #footer{
-    background-image: url('https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80.avif');
-    color: #F4F4F4;
-    font-size: 20px;
+    background-color: #fcfcfc;
+    box-shadow: 1px 1px 5px #232323;
+    color: #000000;
+    font-size: 18px;
     padding: 20px;
     text-align: center;
 }
+
 #footer a{
     text-decoration: none;
     font-size: 30px;
-    margin: 0 20px;
-    color: rgba(224, 224, 224, 0.9);
+    margin: 0 40px;
+    color: rgba(0, 0, 0, 0.9);
 }
 
 #footer a:hover{
-    transition: 0.5s;
+    transition: 0.2s;
     transform-style: flat;
     color: white;
 }
@@ -118,12 +217,12 @@ a{
 
 .fab.fa-linkedin:hover{
     color: #0A66C2;
-    transition: 0.8s;
+    transition: 0.4s;
 }
 
 .fab.fa-github:hover{
   color: #6e5494;
-  transition: 0.8s;
+  transition: 0.4s;
 }
 
 .fab.fa-instagram:hover{
@@ -134,12 +233,12 @@ a{
   background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
   background-clip: text;
   -webkit-background-clip: text;
-  transition: 0.8s;
+  transition: 0.4s;
   /* color: #5851DB; */
 }
 
 .fab.fa-twitter:hover{
-  transition: 0.8s;
+  transition: 0.4s;
   color: #188CD8;
 }
 
@@ -158,46 +257,18 @@ a{
   color: #fff;
 }
 
-/* @media (max-width: 1040px){
-  #small_para h3{
-    padding-top: 200px;}
- } */
- @media (max-width: 860px){
-  #small_para h3{
-    padding-top: 0px;}
-
-  .avatar-bordered{
-    margin-top: 80px;
-  }
-
-  #banner h2{
-      padding-top: 100px;
-    }
- }
-
- @media (max-width: 1040px){
-  .avatar-bordered{
-    margin-top: 60px;
-  }
-  }
-
- @media (max-width: 960px) {
-  /* For a screen < 960px, this CSS will be read */
-  .container {
-    width: 700px;
-  }
+.btn_list{
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    flex-direction: column;
+    margin: 18px;
 }
 
-@media (max-width: 720px) {
-  /* For a screen < 720px, this CSS will be read */
-  .container {
-    width: 500px;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
-@media (max-width: 540px) {
-  /* For a screen < 540px, this CSS will be read */
-  .container {
-    width: 300px;
-  }
+.text-slider-items {
+  display: none;
 }
