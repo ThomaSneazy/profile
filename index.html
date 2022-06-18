@@ -8,6 +8,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+        <link rel="icon" type="image/x-icon" href="/images/android-chrome-192x192.png">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
         <title>Thomas Carré</title>
@@ -30,18 +31,8 @@
               </div>
 
               <div class="small_para">
-                <p>Junior Web Developer</p>
-                <h1>
-                  <span class="text-slider-items">
-                      A computer Science portal for geeks,
-                      A place to pratice code
-                  </span>
+                <p>Hello, I am <span class="type"></span></p>
 
-                  <strong class="text-slider"></strong>
-                  <!-- classes "text-slider"
-                  and "text-slider-items"
-                  for typed.js script -->
-              </h1>
                 <h3>
                Après quelques années dans l'hôtellerie et la restauration, j'ai décidé de changer complètement de voie et me lancer à 100% dans le domaine de l'informatique que j'affectionne depuis mon adolescence.
                   J'ai décidé de réorienter ma carrière vers le développement Web, en me concentrant sur la partie Front-End. J'ai suivi le bootcamp du Wagon ce qui m'a permis d'approfondir mes compétences pour ensuite postuler et être selectionné en 4ème année chez EPITECH. <br><br>
@@ -115,9 +106,19 @@
           </div>
         </div>
 
+
+        <script src="./scripts/typed.js"></script>
+        <script>
+          var typed = new Typed('.type', {
+            strings: ['Thomas !',
+            'a Junior Front End Developer',
+            'a Junior Designer',
+          ],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true
+          });
+        </script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-
-
     </body>
   </html>
