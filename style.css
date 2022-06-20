@@ -162,20 +162,24 @@ ul{
   height: 460px;
   border: 1px solid black;
   margin-bottom: 25px;
-  box-shadow: black 8px 7px 0px;
+
 }
 .banner img{
   width: 300px;
   height: 460px;
   border: 1px solid black;
   margin-bottom: 25px;
-  box-shadow: 0.8rem 0.8rem #000000, -0.7rem -0.7rem #FFCD00;
+  box-shadow: black 8px 7px 0px;
+  box-shadow: 0.4rem 0.4rem #000000, -0.4rem -0.4rem #FFCD00;
 }
 
 
 
 .banner img:hover {
-  transform: rotate(3deg) scale(1.02);
+  transform: rotate(0deg) scale(1.05);
+  box-shadow: black 8px 7px 0px;
+  box-shadow: 1.5rem 1.5rem #000000, -1.5rem -1.5rem #FFCD00;
+  border: 1px solid black;
   transition: ease 1s;
 }
 .card{
@@ -323,7 +327,7 @@ html {
     height: none;
   }
  .small_para{
-  display: ;
+
  }
 
 
