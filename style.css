@@ -219,6 +219,11 @@ section{
   display: flex;
 }
 
+.type{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+}
+
 ul{
   display: flex;
   justify-content: space-evenly;
