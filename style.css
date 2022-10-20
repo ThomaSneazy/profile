@@ -454,6 +454,7 @@ ul{
 
 .images-container img{
   border: 1px solid black;
+  box-shadow: 1px 2px 1px rgb(166, 166, 166);
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -481,8 +482,36 @@ ul{
     flex-direction: column;
   }
 
+  .banner img{
+    width: 200px;
+    height: 300px;
+    border: 1px solid black;
+    margin-bottom: 25px;
+    box-shadow: black 8px 7px 0px;
+    box-shadow: 0.4rem 0.4rem #000000, -0.4rem -0.4rem #FFCD00;
+  }
+
   .small_para h3{
     margin: 0;
+    padding-bottom: 14px;
+    font-size: 14px;
+  }
+
+  .type{
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: 600;
+      font-size: 10px;
+  }
+
+  .button-contact{
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-family: 'Helvetica';
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #404040;
   }
 
   section{
