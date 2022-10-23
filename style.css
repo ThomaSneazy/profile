@@ -598,6 +598,7 @@ body {
   filter: drop-shadow(0px 0px 7px rgba(246, 246, 246, 0.7));
 }
 .productImage {
+  filter: blur(4px);
   grid-column: 1/span 2;
   grid-row: 1 /span 2;
   width: var(--size);
@@ -619,14 +620,7 @@ body {
   );
   transition: all 0.7s cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
-/* .kittflixImg {
-  background-image: url('images/kittflix.png');
-  background-position: 5%;
-}
-.imparatoImg {
-  background-image: url('images/imparato-landing.png');
-  background-position: 5%;
-} */
+
 h4,
 ul,
 span {
@@ -644,8 +638,8 @@ span {
 .size ul li,
 .color ul li {
   list-style: none;
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   margin: 5px;
   padding: 5px;
   text-align: center;
@@ -698,6 +692,8 @@ span {
 }
 
 .productImage:hover {
+  filter: blur(0);
+  filter: brightness(1px);
   clip-path: polygon(
     20% 0%,
     50% 0%,
@@ -712,7 +708,7 @@ span {
     0% 50%,
     20% 50%
   );
-  transform: rotate(-375deg);
+  transform: rotate(-15deg);
   transition: all 0.4s cubic-bezier(0.86, 0, 0.07, 1);
 }
 .productImage:hover ~ * {
